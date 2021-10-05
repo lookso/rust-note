@@ -11,4 +11,8 @@ fn main() {
     println!("cat eat {}", cat_eat);
     let dog_eat = dog::eat();
     println!("dog eat {}", dog_eat);
+
+    use biology::people;
+    let people_eat = people::man::eat();
+    println!("people eat{}", people_eat)
 }
