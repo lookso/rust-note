@@ -1,10 +1,9 @@
 [package]
 name = "greeting"
 version = "0.1.0"
-authors = ["lukun1 <lukun1@tal.com>"]
+authors = ["peanut <lukun1@tal.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.7.0"
