@@ -1,8 +1,11 @@
 mod biology;
+mod demo;
+
 mod school; // 将 school 模块引入到 crate root 中
 
 use biology::animal::cat::cat;
 use biology::animal::dog::dog;
+use demo::mydemo::testdemo;
 
 fn main() {
     let avg = school::teacher::average_students();
@@ -14,5 +17,8 @@ fn main() {
 
     use biology::people;
     let people_eat = people::man::eat();
-    println!("people eat{}", people_eat)
+    println!("people eat{}", people_eat);
+
+    let out = testdemo::mytest();
+    println!("mytest:{}", out);
 }
