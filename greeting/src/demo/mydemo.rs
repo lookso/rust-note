@@ -15,4 +15,10 @@ pub mod testdemo {
         }
         format!("{}", "haha")
     }
+    pub fn fbnq(n: i32) -> i32 {
+        if n < 2 {
+            return n;
+        }
+        fbnq(n - 1) + fbnq(n - 2)
+    }
 }
