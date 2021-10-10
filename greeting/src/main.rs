@@ -1,16 +1,28 @@
-mod testbasic;
 mod biology;
 mod demo;
+mod testbasic;
 
 mod school; // 将 school 模块引入到 crate root 中
 
-use testbasic::basicmod::bmod;
 use biology::animal::cat::cat;
 use biology::animal::dog::dog;
 use biology::people;
 use demo::mydemo::testdemo;
+use std::env;
+use testbasic::basicmod::bmod;
 
+// cargo run test sample.txt
 fn main() {
+    let args: Vec<String> = env::args().collect();
+    println!("args len {}", args.len());
+    if args.len() >= 3 {
+        print!("{}\n", &args[0]);
+        let query = &args[1];
+        let filename = &args[2];
+
+        println!("Searching for {}", query);
+        println!("In file {}", filename);
+    }
     let avg = school::teacher::average_students();
     println!("{}", avg);
     let cat_eat = cat::eat();
@@ -28,9 +40,15 @@ fn main() {
     println!("fbnq:{}", fbnq);
 
     println!("{}", bmod::b());
-    println!("{}",bfun());
+    println!("{}", bfun());
+
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
 }
-fn bfun() ->usize{
+fn bfun() -> usize {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
 
@@ -40,6 +58,6 @@ fn bfun() ->usize{
     }
 
     let guess: u32 = "42".parse().expect("Not a number!");
-    println!("{}",guess);
+    println!("{}", guess);
     index
 }
