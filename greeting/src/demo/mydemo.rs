@@ -22,3 +22,9 @@ pub mod testdemo {
         fbnq(n - 1) + fbnq(n - 2)
     }
 }
+
+// 在测试函数前面加test_ 不是必须的，却是个好习惯。
+#[test]
+fn test_say_hello() {
+    print!("我只是个测试了，你想怎样");
+}
