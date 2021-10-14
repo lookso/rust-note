@@ -38,7 +38,8 @@ pub fn test_person() {
 #[allow(unused)]
 pub fn test_thread() {
     use std::thread;
-    use std::time::Duration;
+    //use std::time::Duration;
+    use std::time::*;
 
     let tuple_name: (i32, i32) = (1, 20);
     println!("tuple_list:{:?},{}", tuple_name, tuple_name.0);
@@ -54,7 +55,7 @@ pub fn test_thread() {
     };
     inc();
 
-    thread::spawn(|| {
+    let t = thread::spawn(move || {
         for i in 1..10 {
             println!("hi number {} from the spawned thread!", i);
             thread::sleep(Duration::from_millis(1));
@@ -65,6 +66,7 @@ pub fn test_thread() {
         println!("hi number {} from the main thread!", i);
         thread::sleep(Duration::from_millis(1));
     }
+    t.join().unwrap();
 }
 
 // 泛型介绍

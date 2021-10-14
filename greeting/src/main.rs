@@ -1,8 +1,11 @@
+mod basic;
 mod biology;
 mod demo;
 mod testbasic;
 
 mod school; // 将 school 模块引入到 crate root 中
+
+mod package;
 
 use biology::animal::cat::cat;
 use biology::animal::dog::dog;
