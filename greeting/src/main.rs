@@ -16,6 +16,7 @@ use testbasic::basicmod::bmod;
 
 // cargo run test sample.txt
 fn main() {
+    mytime();
     let args: Vec<String> = env::args().collect();
     println!("args len {}", args.len());
     if args.len() >= 3 {
@@ -50,7 +51,18 @@ fn main() {
     for element in a.iter() {
         println!("the value is: {}", element);
     }
+
+    if cfg!(target_os = "linux") {
+        println!("Yes. It's definitely linux!");
+    } else {
+        println!("Yes. It's definitely *not* linux!");
+    }
 }
+#[cfg(target_os = "linux")]
+fn are_you_on_linux() {
+    println!("condition met!")
+}
+
 fn bfun() -> usize {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
@@ -63,4 +75,27 @@ fn bfun() -> usize {
     let guess: u32 = "42".parse().expect("Not a number!");
     println!("{}", guess);
     index
+}
+extern crate chrono; // extern 导入外部包
+use chrono::{DateTime, FixedOffset, Local, Utc};
+fn mytime() {
+    let local_time = Local::now();
+    println!(
+        "时间格式化:{}",
+        local_time.format("%Y-%m-%d %H:%M:%S").to_string()
+    );
+
+    let utc_time = DateTime::<Utc>::from_utc(local_time.naive_utc(), Utc);
+    let china_timezone = FixedOffset::east(8 * 3600);
+    let rio_timezone = FixedOffset::west(2 * 3600);
+    println!("Local time now is {}", local_time);
+    println!("UTC time now is {}", utc_time);
+    println!(
+        "Time in Hong Kong now is {}",
+        utc_time.with_timezone(&china_timezone)
+    );
+    println!(
+        "Time in Rio de Janeiro now is {}",
+        utc_time.with_timezone(&rio_timezone)
+    );
 }
