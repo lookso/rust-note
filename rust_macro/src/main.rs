@@ -23,7 +23,14 @@ macro_rules! print_result {
     };
 }
 
+mod example;
+use example::hashmapdemo;
+use example::jsondemo;
+extern crate json;
 fn main() {
+    hashmapdemo::hashmap_fun();
+    jsondemo::json_func();
+
     foo();
     bar();
 
