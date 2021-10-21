@@ -1,7 +1,8 @@
 use json::{array, object};
 pub fn json_func() {
+    // r# 标识原样输出,不需要在字符串中转义特殊字符
     let parsed = json::parse(
-        r#"
+        r#" 
     {
         "code": 200,
         "success": true,
@@ -60,9 +61,9 @@ pub fn json_func() {
     sub_items["跳远"] = 3.into();
 
     let mut subject = json::JsonValue::new_array();
-    subject.push(100);
-    subject.push(99);
-    subject.push(sub_items);
+    subject.push(100).unwrap();
+    Some(subject.push(99));
+    Some(subject.push(sub_items));
 
     let data = array!["123", true, json::Null, 300];
     let students = object! {

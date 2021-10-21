@@ -8,6 +8,15 @@ macro_rules! create_function {
         }
     };
 }
+// block
+// expr 用于表达式
+// ident 用于变量名或函数名
+// item
+// pat (模式 pattern)
+// path
+// stmt (语句 statement)
+// tt (标记树 token tree)
+// ty (类型 type)
 
 // 借助上述宏来创建名为 `foo` 和 `bar` 的函数。
 create_function!(foo);
@@ -27,7 +36,15 @@ mod example;
 use example::hashmapdemo;
 use example::jsondemo;
 extern crate json;
+extern crate mysql;
+// use mysql::prelude::*;
+// use mysql::*;
+
 fn main() {
+    //let url = "mysql://root:password@localhost:3306/MYDB";
+    //let pool = Pool::new(url).unwrap(); // 获取连接池
+    //let mut conn = pool.get_conn().unwrap(); // 获取链接
+
     hashmapdemo::hashmap_fun();
     jsondemo::json_func();
 
@@ -43,12 +60,3 @@ fn main() {
         x * x + 2 * x - 1
     });
 }
-// block
-// expr 用于表达式
-// ident 用于变量名或函数名
-// item
-// pat (模式 pattern)
-// path
-// stmt (语句 statement)
-// tt (标记树 token tree)
-// ty (类型 type)
