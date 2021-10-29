@@ -37,14 +37,10 @@ use example::hashmapdemo;
 use example::jsondemo;
 extern crate json;
 extern crate mysql;
-// use mysql::prelude::*;
-// use mysql::*;
+extern crate package_utils;
 
 fn main() {
-    //let url = "mysql://root:password@localhost:3306/MYDB";
-    //let pool = Pool::new(url).unwrap(); // 获取连接池
-    //let mut conn = pool.get_conn().unwrap(); // 获取链接
-
+    package_utils::sync_channel();
     hashmapdemo::hashmap_fun();
     jsondemo::json_func();
 
