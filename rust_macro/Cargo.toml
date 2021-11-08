@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 json = "*"
-mysql = "*"  
+mysql = "*"
 package_utils = { path = "../package_utils",version = "0.1.0"}

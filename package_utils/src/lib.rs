@@ -10,8 +10,12 @@ mod tests {
 use std::sync::mpsc;
 use std::thread;
 use std::time::Duration;
+mod sync_pack;
+use sync_pack::lock::call as lcokCall;
 
 pub fn sync_channel() {
+    lcokCall();
+    sync_pack::sync_test();
     // --snip--
 
     let (tx, rx) = mpsc::channel();
@@ -52,4 +56,5 @@ pub fn sync_channel() {
     }
 
     // --snip--
+    println!("---------------");
 }
