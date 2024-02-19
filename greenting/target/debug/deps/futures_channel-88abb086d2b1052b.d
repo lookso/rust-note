@@ -1,0 +1,9 @@
+/Users/lukun/apps/works/rust/rust-note/greenting/target/debug/deps/libfutures_channel-88abb086d2b1052b.rmeta: /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lib.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lock.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/mod.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/queue.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/oneshot.rs
+
+/Users/lukun/apps/works/rust/rust-note/greenting/target/debug/deps/futures_channel-88abb086d2b1052b.d: /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lib.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lock.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/mod.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/queue.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/oneshot.rs
+
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lib.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/lock.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/mod.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/mpsc/queue.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/futures-channel-0.3.30/src/oneshot.rs:

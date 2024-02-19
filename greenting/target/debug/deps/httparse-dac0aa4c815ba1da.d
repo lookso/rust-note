@@ -1,0 +1,10 @@
+/Users/lukun/apps/works/rust/rust-note/greenting/target/debug/deps/libhttparse-dac0aa4c815ba1da.rmeta: /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/sse42.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/avx2.rs
+
+/Users/lukun/apps/works/rust/rust-note/greenting/target/debug/deps/httparse-dac0aa4c815ba1da.d: /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/sse42.rs /Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/avx2.rs
+
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/sse42.rs:
+/Users/lukun/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/avx2.rs:
